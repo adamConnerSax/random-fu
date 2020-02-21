@@ -1,0 +1,23 @@
+
+./Setup.lhs,16
+ main main3,4
+
+./src/Data/RVar.hs,581
+module Data.RVarData.RVar17,18
+type RVar RVar82,83
+runRVar runRVar86,87
+runRVar runRVar87,88
+sampleRVar sampleRVar90,91
+sampleRVar sampleRVar91,92
+newtype RVarT RVarT141,142
+newtype RVarT m a = RVarT RVarT141,142
+newtype RVarT m a = RVarT { unRVarT unRVarT141,142
+runRVarT runRVarT143,144
+runRVarT runRVarT144,145
+sampleRVarT sampleRVarT146,147
+sampleRVarT sampleRVarT147,148
+runRVarTWith runRVarTWith175,176
+runRVarTWith runRVarTWith176,177
+sampleRVarTWith sampleRVarTWith185,186
+sampleRVarTWith sampleRVarTWith186,187
+instance instance194,195

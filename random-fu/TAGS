@@ -1,0 +1,580 @@
+
+./Setup.lhs,16
+ main main3,4
+
+./src/Test/ChiSquare.hs,171
+module Test.ChiSquare Test.ChiSquare1,2
+summarizeObservations summarizeObservations8,9
+chiSquareStatistic chiSquareStatistic13,14
+chiSquareTest chiSquareTest21,22
+
+./src/Test/Hist.hs,839
+module Test.Hist Test.Hist8,9
+sum sum30,31
+cpuTimeDiff cpuTimeDiff32,33
+time time34,35
+time_ time_40,41
+replicateM'chunkSize replicateM'chunkSize46,47
+replicateM' replicateM'48,49
+replicateM' replicateM'49,50
+cpus=cpus61,62
+sampleN sampleN63,64
+sampleN sampleN64,65
+hist hist82,83
+hist hist83,84
+cHist cHist92,93
+cDiff cDiff95,96
+pHist pHist105,106
+pHist pHist106,107
+pHist_ pHist_108,109
+pHist_ pHist_109,110
+cpHist cpHist115,116
+cpHist cpHist116,117
+cpDiff cpDiff120,121
+cpDiff cpDiff121,122
+cpDiff_ cpDiff_123,124
+cpDiff_ cpDiff_124,125
+bcHist bcHist131,132
+bcHist bcHist132,133
+fmtDbl fmtDbl137,138
+fmtDbl fmtDbl138,139
+printHist printHist140,141
+printHist printHist143,144
+mkByteCounter mkByteCounter167,168
+uniformize uniformize176,177
+uniformize uniformize177,178
+
+./src/Data/Random.hs,37
+module Data.RandomData.Random37,38
+
+./src/Data/Random/Sample.hs,362
+module Data.Random.Sample Data.Random.Sample6,7
+class Sampleable Sampleable19,20
+    sampleFrom :: RandomSource m s => s s21,22
+    sampleFrom sampleFrom21,22
+instance instance23,24
+sample sample32,33
+sample sample33,34
+sampleState sampleState37,38
+sampleState sampleState38,39
+sampleStateT sampleStateT42,43
+sampleStateT sampleStateT43,44
+
+./src/Data/Random/RVar.hs,95
+module Data.Random.RVarData.Random.RVar1,2
+runRVarT runRVarT12,13
+runRVarT runRVarT13,14
+
+./src/Data/Random/Distribution/F.hs,129
+module Data.Random.Distribution.F Data.Random.Distribution.F4,5
+data F F12,13
+data F t = F F12,13
+instance instance14,15
+
+./src/Data/Random/Distribution/Simplex.hs,390
+module Data.Random.Distribution.SimplexData.Random.Distribution.Simplex6,7
+newtype StdSimplex StdSimplex21,22
+    StdSimplex StdSimplex27,28
+instance instance30,31
+stdSimplex stdSimplex35,36
+stdSimplex stdSimplex36,37
+stdSimplexT stdSimplexT38,39
+stdSimplexT stdSimplexT39,40
+fractionalStdSimplex fractionalStdSimplex46,47
+fractionalStdSimplex fractionalStdSimplex47,48
+
+./src/Data/Random/Distribution/ChiSquare.hs,303
+module Data.Random.Distribution.ChiSquare Data.Random.Distribution.ChiSquare4,5
+chiSquare chiSquare12,13
+chiSquare chiSquare13,14
+chiSquareT chiSquareT15,16
+chiSquareT chiSquareT16,17
+newtype ChiSquare ChiSquare18,19
+newtype ChiSquare b = ChiSquare ChiSquare18,19
+instance instance20,21
+
+./src/Data/Random/Distribution/Rayleigh.hs,432
+module Data.Random.Distribution.Rayleigh Data.Random.Distribution.Rayleigh6,7
+floatingRayleigh floatingRayleigh12,13
+floatingRayleigh floatingRayleigh13,14
+newtype Rayleigh Rayleigh21,22
+newtype Rayleigh a = Rayleigh Rayleigh21,22
+rayleigh rayleigh23,24
+rayleigh rayleigh24,25
+rayleighT rayleighT26,27
+rayleighT rayleighT27,28
+rayleighCDF rayleighCDF29,30
+rayleighCDF rayleighCDF30,31
+instance instance32,33
+
+./src/Data/Random/Distribution/Binomial.hs,1045
+module Data.Random.Distribution.Binomial Data.Random.Distribution.Binomial7,8
+integralBinomial integralBinomial25,26
+integralBinomial integralBinomial26,27
+integralBinomialCDF integralBinomialCDF47,48
+integralBinomialCDF integralBinomialCDF48,49
+integralBinomialPDF integralBinomialPDF62,63
+integralBinomialPDF integralBinomialPDF63,64
+integralBinomialLogPdf integralBinomialLogPdf69,70
+integralBinomialLogPdf integralBinomialLogPdf70,71
+floatingBinomial floatingBinomial95,96
+floatingBinomial floatingBinomial96,97
+floatingBinomialCDF floatingBinomialCDF98,99
+floatingBinomialCDF floatingBinomialCDF99,100
+floatingBinomialPDF floatingBinomialPDF101,102
+floatingBinomialPDF floatingBinomialPDF102,103
+floatingBinomialLogPDF floatingBinomialLogPDF104,105
+floatingBinomialLogPDF floatingBinomialLogPDF105,106
+binomial binomial115,116
+binomial binomial116,117
+binomialT binomialT126,127
+binomialT binomialT127,128
+data Binomial Binomial129,130
+data Binomial b a = Binomial Binomial129,130
+$($131,132
+
+./src/Data/Random/Distribution/T.hs,185
+module Data.Random.Distribution.T Data.Random.Distribution.T12,13
+t t21,22
+t t22,23
+tT tT24,25
+tT tT25,26
+newtype T T27,28
+newtype T a = T T27,28
+instance instance30,31
+
+./src/Data/Random/Distribution/StretchedExponential.hs,724
+module Data.Random.Distribution.StretchedExponential Data.Random.Distribution.StretchedExponential6,7
+newtype StretchedExponential StretchedExponential12,13
+newtype StretchedExponential a = StretchedExp StretchedExp12,13
+floatingStretchedExponential floatingStretchedExponential14,15
+floatingStretchedExponential floatingStretchedExponential15,16
+floatingStretchedExponentialCDF floatingStretchedExponentialCDF19,20
+floatingStretchedExponentialCDF floatingStretchedExponentialCDF20,21
+stretchedExponential stretchedExponential22,23
+stretchedExponential stretchedExponential23,24
+stretchedExponentialT stretchedExponentialT25,26
+stretchedExponentialT stretchedExponentialT26,27
+instance instance28,29
+
+./src/Data/Random/Distribution/Gamma.hs,427
+module Data.Random.Distribution.GammaData.Random.Distribution.Gamma6,7
+mtGamma mtGamma34,35
+gamma gamma61,62
+gamma gamma62,63
+gammaT gammaT64,65
+gammaT gammaT65,66
+erlang erlang67,68
+erlang erlang68,69
+erlangT erlangT70,71
+erlangT erlangT71,72
+data    Gamma Gamma73,74
+data    Gamma a    = Gamma Gamma73,74
+newtype Erlang Erlang74,75
+newtype Erlang a b = Erlang Erlang74,75
+instance instance76,77
+
+./src/Data/Random/Distribution/Uniform.hs,2614
+module Data.Random.Distribution.UniformData.Random.Distribution.Uniform8,9
+integralUniform integralUniform55,56
+integralUniform integralUniform56,57
+integralUniform' integralUniform'69,70
+integralUniform' integralUniform'70,71
+integralUniformCDF integralUniformCDF87,88
+integralUniformCDF integralUniformCDF88,89
+bytesNeeded bytesNeeded97,98
+bytesNeeded bytesNeeded98,99
+powersOf256 powersOf256100,101
+powersOf256 powersOf256101,102
+boundedStdUniform boundedStdUniform105,106
+boundedStdUniform boundedStdUniform106,107
+boundedStdUniformCDF boundedStdUniformCDF108,109
+boundedStdUniformCDF boundedStdUniformCDF109,110
+boundedEnumStdUniform boundedEnumStdUniform113,114
+boundedEnumStdUniform boundedEnumStdUniform114,115
+boundedEnumStdUniformCDF boundedEnumStdUniformCDF116,117
+boundedEnumStdUniformCDF boundedEnumStdUniformCDF117,118
+floatStdUniform floatStdUniform120,121
+floatStdUniform floatStdUniform121,122
+doubleStdUniform doubleStdUniform127,128
+doubleStdUniform doubleStdUniform128,129
+realFloatStdUniform realFloatStdUniform131,132
+realFloatStdUniform realFloatStdUniform132,133
+fixedStdUniform fixedStdUniform144,145
+fixedStdUniform fixedStdUniform145,146
+realStdUniformCDF realStdUniformCDF153,154
+realStdUniformCDF realStdUniformCDF154,155
+realStdUniformPDF realStdUniformPDF160,161
+realStdUniformPDF realStdUniformPDF161,162
+lerp lerp168,169
+lerp lerp169,170
+floatUniform floatUniform172,173
+floatUniform floatUniform173,174
+doubleUniform doubleUniform180,181
+doubleUniform doubleUniform181,182
+realFloatUniform realFloatUniform188,189
+realFloatUniform realFloatUniform189,190
+fixedUniform fixedUniform196,197
+fixedUniform fixedUniform197,198
+realUniformCDF realUniformCDF202,203
+realUniformCDF realUniformCDF203,204
+enumUniform enumUniform211,212
+enumUniform enumUniform212,213
+enumUniformCDF enumUniformCDF216,217
+enumUniformCDF enumUniformCDF217,218
+uniform uniform228,229
+uniform uniform229,230
+uniformT uniformT234,235
+uniformT uniformT235,236
+stdUniform stdUniform243,244
+stdUniform stdUniform244,245
+stdUniformT stdUniformT252,253
+stdUniformT stdUniformT253,254
+stdUniformNonneg stdUniformNonneg258,259
+stdUniformNonneg stdUniformNonneg259,260
+stdUniformPos stdUniformPos262,263
+stdUniformPos stdUniformPos263,264
+stdUniformPosT stdUniformPosT266,267
+stdUniformPosT stdUniformPosT267,268
+data Uniform Uniform270,271
+    Uniform Uniform274,275
+data StdUniform StdUniform284,285
+data StdUniform t = StdUniformStdUniform284,285
+$($286,287
+instance instance291,292
+
+./src/Data/Random/Distribution/Bernoulli.hs,621
+module Data.Random.Distribution.Bernoulli Data.Random.Distribution.Bernoulli7,8
+bernoulli bernoulli21,22
+bernoulli bernoulli22,23
+bernoulliT bernoulliT27,28
+bernoulliT bernoulliT28,29
+boolBernoulli boolBernoulli32,33
+boolBernoulli boolBernoulli33,34
+boolBernoulliCDF boolBernoulliCDF37,38
+boolBernoulliCDF boolBernoulliCDF38,39
+generalBernoulli generalBernoulli43,44
+generalBernoulli generalBernoulli44,45
+generalBernoulliCDF generalBernoulliCDF48,49
+    | f `gte`gte50,51
+newtype Bernoulli Bernoulli55,56
+newtype Bernoulli b a = Bernoulli Bernoulli55,56
+instance instance57,58
+$($66,67
+
+./src/Data/Random/Distribution/Weibull.hs,297
+module Data.Random.Distribution.Weibull Data.Random.Distribution.Weibull1,2
+data Weibull Weibull6,7
+data Weibull a = Weibull Weibull6,7
+data Weibull a = Weibull { weibullLambda weibullLambda6,7
+data Weibull a = Weibull { weibullLambda :: !a, weibullK weibullK6,7
+instance instance9,10
+
+./src/Data/Random/Distribution/Categorical.hs,1322
+module Data.Random.Distribution.CategoricalData.Random.Distribution.Categorical6,7
+categorical categorical35,36
+categorical categorical36,37
+categoricalT categoricalT40,41
+categoricalT categoricalT41,42
+weightedCategorical weightedCategorical45,46
+weightedCategorical weightedCategorical46,47
+weightedCategoricalT weightedCategoricalT50,51
+weightedCategoricalT weightedCategoricalT51,52
+fromList fromList55,56
+fromList fromList56,57
+toList toList60,61
+toList toList61,62
+totalWeight totalWeight66,67
+totalWeight totalWeight67,68
+numEvents numEvents71,72
+numEvents numEvents72,73
+fromWeightedList fromWeightedList76,77
+fromWeightedList fromWeightedList77,78
+fromObservations fromObservations83,84
+fromObservations fromObservations84,85
+newtype Categorical Categorical97,98
+newtype Categorical p a = Categorical Categorical97,98
+instance instance100,101
+mapCategoricalPs mapCategoricalPs188,189
+mapCategoricalPs mapCategoricalPs189,190
+normalizeCategoricalPs normalizeCategoricalPs193,194
+normalizeCategoricalPs normalizeCategoricalPs194,195
+modifySTRef' modifySTRef'231,232
+modifySTRef' modifySTRef'232,233
+collectEvents collectEvents240,241
+collectEvents collectEvents241,242
+collectEventsBy collectEventsBy248,249
+collectEventsBy collectEventsBy249,250
+
+./src/Data/Random/Distribution/Dirichlet.hs,397
+module Data.Random.Distribution.Dirichlet Data.Random.Distribution.Dirichlet6,7
+fractionalDirichlet fractionalDirichlet14,15
+fractionalDirichlet fractionalDirichlet15,16
+dirichlet dirichlet23,24
+dirichlet dirichlet24,25
+dirichletT dirichletT26,27
+dirichletT dirichletT27,28
+newtype Dirichlet Dirichlet29,30
+newtype Dirichlet a = Dirichlet Dirichlet29,30
+instance instance31,32
+
+./src/Data/Random/Distribution/Ziggurat.hs,1123
+module Data.Random.Distribution.ZigguratData.Random.Distribution.Ziggurat20,21
+data Ziggurat Ziggurat47,48
+data Ziggurat v t = Ziggurat Ziggurat47,48
+        zTable_xs zTable_xs57,58
+        zTable_y_ratios zTable_y_ratios59,60
+        zTable_ys zTable_ys61,62
+        zGetIU zGetIU75,76
+        zTailDist zTailDist81,82
+        zUniform zUniform86,87
+        zFunc zFunc89,90
+        zMirror zMirror96,97
+runZiggurat runZiggurat105,106
+runZiggurat runZiggurat107,108
+mkZiggurat_ mkZiggurat_172,173
+mkZiggurat_ mkZiggurat_183,184
+mkZiggurat mkZiggurat203,204
+mkZiggurat mkZiggurat214,215
+mkZigguratRec mkZigguratRec239,240
+mkZigguratRec mkZigguratRec250,251
+mkTail mkTail256,257
+mkTail mkTail266,267
+zigguratTable zigguratTable281,282
+zigguratTable zigguratTable283,284
+zigguratExcess zigguratExcess286,287
+zigguratExcess zigguratExcess287,288
+zigguratXs zigguratXs289,290
+zigguratXs zigguratXs290,291
+precomputeRatios precomputeRatios307,308
+precomputeRatios precomputeRatios308,309
+findBin0 findBin0328,329
+findBin0 findBin0330,331
+instance instance344,345
+
+./src/Data/Random/Distribution/Triangular.hs,435
+module Data.Random.Distribution.Triangular Data.Random.Distribution.Triangular6,7
+data Triangular Triangular18,19
+data Triangular a = Triangular Triangular18,19
+    triLower triLower20,21
+    triMid triMid22,23
+    triUpper triUpper24,25
+floatingTriangular floatingTriangular28,29
+floatingTriangular floatingTriangular29,30
+triangularCDF triangularCDF44,45
+triangularCDF triangularCDF45,46
+instance instance55,56
+
+./src/Data/Random/Distribution/Multinomial.hs,306
+module Data.Random.Distribution.Multinomial Data.Random.Distribution.Multinomial1,2
+multinomial multinomial7,8
+multinomial multinomial8,9
+multinomialT multinomialT10,11
+multinomialT multinomialT11,12
+data Multinomial Multinomial13,14
+    Multinomial Multinomial14,15
+instance instance16,17
+
+./src/Data/Random/Distribution/Exponential.hs,517
+module Data.Random.Distribution.Exponential Data.Random.Distribution.Exponential6,7
+newtype Exponential Exponential21,22
+newtype Exponential a = Exp Exp21,22
+floatingExponential floatingExponential23,24
+floatingExponential floatingExponential24,25
+floatingExponentialCDF floatingExponentialCDF28,29
+floatingExponentialCDF floatingExponentialCDF29,30
+exponential exponential38,39
+exponential exponential39,40
+exponentialT exponentialT48,49
+exponentialT exponentialT49,50
+instance instance51,52
+
+./src/Data/Random/Distribution/Pareto.hs,249
+module Data.Random.Distribution.Pareto Data.Random.Distribution.Pareto4,5
+pareto pareto8,9
+pareto pareto9,10
+paretoT paretoT11,12
+paretoT paretoT12,13
+data Pareto Pareto14,15
+data Pareto a = Pareto Pareto14,15
+instance instance16,17
+
+./src/Data/Random/Distribution/Beta.hs,365
+module Data.Random.Distribution.Beta Data.Random.Distribution.Beta7,8
+fractionalBeta fractionalBeta20,21
+fractionalBeta fractionalBeta21,22
+beta beta29,30
+beta beta30,31
+betaT betaT34,35
+betaT betaT35,36
+data Beta Beta37,38
+data Beta a = Beta Beta37,38
+logBetaPdf logBetaPdf40,41
+logBetaPdf logBetaPdf41,42
+instance instance49,50
+$($57,58
+
+./src/Data/Random/Distribution/Normal.hs,2146
+module Data.Random.Distribution.NormalData.Random.Distribution.Normal5,6
+normalPair normalPair38,39
+normalPair normalPair39,40
+boxMullerNormalPair boxMullerNormalPair48,49
+boxMullerNormalPair boxMullerNormalPair49,50
+knuthPolarNormalPair knuthPolarNormalPair64,65
+knuthPolarNormalPair knuthPolarNormalPair65,66
+normalTail normalTail79,80
+normalTail normalTail81,82
+normalZ normalZ94,95
+normalZ normalZ97,98
+normalF normalF100,101
+normalF normalF101,102
+normalFInv normalFInv105,106
+normalFInv normalFInv106,107
+normalFInt normalFInt108,109
+normalFInt normalFInt109,110
+normalFVol normalFVol113,114
+normalFVol normalFVol114,115
+realFloatStdNormal realFloatStdNormal132,133
+realFloatStdNormal realFloatStdNormal133,134
+doubleStdNormal doubleStdNormal146,147
+doubleStdNormal doubleStdNormal147,148
+doubleStdNormalC doubleStdNormalC150,151
+doubleStdNormalC doubleStdNormalC151,152
+doubleStdNormalR, doubleStdNormalV doubleStdNormalV152,153
+doubleStdNormalR,doubleStdNormalR152,153
+doubleStdNormalR doubleStdNormalR153,154
+doubleStdNormalV doubleStdNormalV154,155
+doubleStdNormalZ doubleStdNormalZ157,158
+doubleStdNormalZ doubleStdNormalZ158,159
+floatStdNormal floatStdNormal172,173
+floatStdNormal floatStdNormal173,174
+floatStdNormalC floatStdNormalC176,177
+floatStdNormalC floatStdNormalC177,178
+floatStdNormalR, floatStdNormalV floatStdNormalV178,179
+floatStdNormalR,floatStdNormalR178,179
+floatStdNormalR floatStdNormalR179,180
+floatStdNormalV floatStdNormalV180,181
+floatStdNormalZ floatStdNormalZ183,184
+floatStdNormalZ floatStdNormalZ184,185
+normalCdf normalCdf196,197
+normalCdf normalCdf197,198
+normalPdf normalPdf199,200
+normalPdf normalPdf200,201
+normalLogPdf normalLogPdf205,206
+normalLogPdf normalLogPdf206,207
+data Normal Normal213,214
+    = StdNormalStdNormal215,216
+    | Normal Normal217,218
+instance instance219,220
+stdNormal stdNormal244,245
+stdNormal stdNormal245,246
+stdNormalT stdNormalT248,249
+stdNormalT stdNormalT249,250
+normal normal252,253
+normal normal253,254
+normalT normalT256,257
+normalT normalT257,258
+
+./src/Data/Random/Distribution/Poisson.hs,801
+module Data.Random.Distribution.Poisson Data.Random.Distribution.Poisson6,7
+integralPoisson integralPoisson19,20
+integralPoisson integralPoisson20,21
+integralPoissonCDF integralPoissonCDF44,45
+integralPoissonCDF integralPoissonCDF45,46
+integralPoissonPDF integralPoissonPDF63,64
+integralPoissonPDF integralPoissonPDF64,65
+fractionalPoisson fractionalPoisson70,71
+fractionalPoisson fractionalPoisson71,72
+fractionalPoissonCDF fractionalPoissonCDF73,74
+fractionalPoissonCDF fractionalPoissonCDF74,75
+fractionalPoissonPDF fractionalPoissonPDF76,77
+fractionalPoissonPDF fractionalPoissonPDF77,78
+poisson poisson79,80
+poisson poisson80,81
+poissonT poissonT82,83
+poissonT poissonT83,84
+newtype Poisson Poisson85,86
+newtype Poisson b a = Poisson Poisson85,86
+$($87,88
+
+./src/Data/Random/Internal/Find.hs,215
+module Data.Random.Internal.Find Data.Random.Internal.Find6,7
+findMax findMax8,9
+findMax findMax9,10
+findMin findMin13,14
+findMin findMin14,15
+findMinFrom findMinFrom25,26
+findMinFrom findMinFrom26,27
+
+./src/Data/Random/Internal/TH.hs,357
+module Data.Random.Internal.THData.Random.Internal.TH15,16
+integralTypes integralTypes28,29
+integralTypes integralTypes29,30
+realFloatTypes realFloatTypes36,37
+realFloatTypes realFloatTypes37,38
+replaceName replaceName46,47
+replaceName replaceName47,48
+replicateInstances replicateInstances68,69
+replicateInstances replicateInstances69,70
+
+./src/Data/Random/Internal/Fixed.hs,369
+module Data.Random.Internal.Fixed Data.Random.Internal.Fixed1,2
+resolutionOf resolutionOf9,10
+resolutionOf resolutionOf10,11
+resolutionOf2 resolutionOf215,16
+resolutionOf2 resolutionOf216,17
+resolutionOf resolutionOf23,24
+resolutionOf2 resolutionOf226,27
+mkFixed mkFixed39,40
+mkFixed mkFixed40,41
+unMkFixed unMkFixed42,43
+unMkFixed unMkFixed43,44
+
+./src/Data/Random/Lift.hs,138
+module Data.Random.Lift Data.Random.Lift2,3
+class Lift Lift27,28
+class Lift Lift27,28
+    lift lift28,29
+instance instance30,31
+
+./src/Data/Random/List.hs,518
+module Data.Random.List Data.Random.List0,1
+randomElement randomElement11,12
+randomElement randomElement12,13
+randomElementT randomElementT15,16
+randomElementT randomElementT16,17
+shuffle shuffle23,24
+shuffle shuffle24,25
+shuffleT shuffleT26,27
+shuffleT shuffleT27,28
+shuffleN shuffleN37,38
+shuffleN shuffleN38,39
+shuffleNT shuffleNT40,41
+shuffleNT shuffleNT41,42
+shuffleNofM shuffleNofM44,45
+shuffleNofM shuffleNofM45,46
+shuffleNofMT shuffleNofMT47,48
+shuffleNofMT shuffleNofMT48,49
+
+./src/Data/Random/Vector.hs,117
+module Data.Random.Vector(Data.Random.Vector0,1
+randomElement randomElement8,9
+randomElement randomElement9,10
+
+./src/Data/Random/Distribution.hs,499
+module Data.Random.Distribution Data.Random.Distribution3,4
+class Distribution Distribution51,52
+class Distribution Distribution51,52
+    rvar rvar53,54
+    rvar rvar54,55
+    rvarT rvarT59,60
+    rvarT rvarT60,61
+class Distribution d t => PDF PDF63,64
+class Distribution d t => PDF PDF63,64
+    pdf pdf64,65
+    pdf pdf65,66
+    logPdf logPdf66,67
+    logPdf logPdf67,68
+class Distribution d t => CDF CDF70,71
+class Distribution d t => CDF CDF70,71
+    cdf cdf95,96
