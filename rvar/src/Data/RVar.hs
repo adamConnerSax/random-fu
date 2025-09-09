@@ -202,8 +202,11 @@ uniformPrimM prim g =
         PrimWord16            -> uniformWord16 g
         PrimWord32            -> uniformWord32 g
         PrimWord64            -> uniformWord64 g
+#if MIN_VERSION_random(1,3,0)
+        PrimByteArray ip n    -> uniformByteArrayM ip n g
+#else
         PrimShortByteString n -> uniformShortByteString n g
-
+#endif
 
 -- |@sampleRVarTWith lift x@ is equivalent to @runRVarTWith lift x 'StdRandom'@.
 {-# INLINE sampleReaderRVarTWith #-}
@@ -276,9 +279,12 @@ instance StatefulGen RGen (RVarT m) where
     {-# INLINE uniformWord32 #-}
     uniformWord64 RGen = RVarT $ prompt PrimWord64
     {-# INLINE uniformWord64 #-}
+#if MIN_VERSION_random(1,3,0)
+    uniformByteArrayM isPinned size RGen = RVarT $ prompt (PrimByteArray isPinned size)
+#else
     uniformShortByteString n RGen = RVarT $ prompt (PrimShortByteString n)
     {-# INLINE uniformShortByteString #-}
-
+#endif
 
 uniformRVarT :: Uniform a => RVarT m a
 uniformRVarT = uniformM RGen

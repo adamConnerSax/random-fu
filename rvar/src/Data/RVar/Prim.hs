@@ -1,6 +1,8 @@
 {-# LANGUAGE DeriveDataTypeable #-}
 {-# LANGUAGE GADTs #-}
+{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RankNTypes #-}
+{-# LANGUAGE CPP #-}
 -- |This is an internal interface to support the 'RVar' abstraction.  It
 -- reifies the operations provided by `System.Random.Stateful.StatefulGen` in a
 -- uniform and efficient way, as functions of type @Prim a -> m a@.
@@ -8,8 +10,11 @@ module Data.RVar.Prim (Prim(..)) where
 
 import Data.Typeable
 import Data.Word
+#if MIN_VERSION_random(1,3,0)
+import Data.Array.Byte (ByteArray)
+#else
 import Data.ByteString.Short
-
+#endif
 -- |A 'Prompt' GADT describing a request for a primitive random variate.  Random variable
 -- definitions will request their entropy via these prompts, and entropy sources will
 -- satisfy those requests. This data type is needed for creating
@@ -24,8 +29,12 @@ data Prim a where
     PrimWord32          :: Prim Word32
     -- | An unsigned 64-bit word, uniformly distributed from 0 to 0xffffffffffffffff
     PrimWord64          :: Prim Word64
+#if MIN_VERSION_random(1,3,0)
+    PrimByteArray       :: !Bool -> !Int -> Prim ByteArray
+#else
     -- | A uniformly distributed `ShortByteString` of length @n@ bytes
     PrimShortByteString :: !Int -> Prim ShortByteString
+#endif
     deriving (Typeable)
 
 instance Show (Prim a) where
@@ -33,5 +42,10 @@ instance Show (Prim a) where
     showsPrec _p PrimWord16        = showString "PrimWord16"
     showsPrec _p PrimWord32        = showString "PrimWord32"
     showsPrec _p PrimWord64        = showString "PrimWord64"
+#if MIN_VERSION_random(1,3,0)
+    showsPrec  p (PrimByteArray ip n) =
+      showParen (p > 10) (showString ("PrimByteArray " ++ show ip ++ " "). showsPrec 11 n)
+#else
     showsPrec  p (PrimShortByteString n) =
       showParen (p > 10) (showString "PrimShortByteString " . showsPrec 11 n)
+#endif
