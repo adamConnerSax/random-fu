@@ -63,7 +63,7 @@ Library
     build-depends:      mwc-random
 
   if flag(mtl2)
-    build-depends:      mtl >= 2.0 && < 2.3
+    build-depends:      mtl >= 2.0 && < 2.4
     cpp-options:        -DMTL2
   else
     build-depends:      mtl == 1.*
